@@ -9,3 +9,9 @@ function myFunction() {
     sentence += " a lot from this book!";
     document.getElementById("Concatenate").innerHTML = sentence;
 }
+
+function mySecondFunction() {
+    var saiyan = "I was raised on Earth";
+    var result = saiyan.fontsize ("13");
+    document.getElementById("Goku").innerHTML = result;
+}
