@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Soccer</title>
+		<h1>The best player in the world</h1>
+		<link rel="stylesheet" type="text/css" href="./CSS/One_Page_Website.css">
+		<script src="JS/one_page_website.js"></script>
+	</head>
+		<body>
+			<p>Cristiano Ronaldo is known to be the best player in the world, although<br>
+			   there are many people that think Lionel Messi is the best player in the world.<br>
+			   They are both amazing players and they are breaking records, however<br>
+			   it is very strange that none of them have ever won a World cup trophy.
+			</P>
+			<nav>
+				<div>
+					<ul>
+						<a href="#Photo Section"><li>Go to Photos</li></a>
+						<a href="#Video Section"><li>Go to Videos</li></a>
+					</ul>
+				</div>
+			</nav>			
+		<p>Enter your information here for a chance to meet Cristiano Ronaldo!</p>
+			<form action="" method="get">
+				First name: <input type="text" name="First_name"><br>
+				Last name: <input type="text" name="Last_name"><br>
+				Email: <input type="email" name="Email"><br>
+				Password: <input type="password" name="Password"><br>
+				<input type="submit" value="Submit">
+			</form>
+			
+		<!--Gallery-->
+		<h1 id="Photo Section">Photos</h1>
+			<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="C:\Users\manue\Desktop\One-Page Website\Images\Celebration.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="C:\Users\manue\Desktop\One-Page Website\Images\Goal.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="C:\Users\manue\Desktop\One-Page Website\Images\Cristiano_Ronaldo.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="C:\Users\manue\Desktop\One-Page Website\Images\Siii.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="C:\Users\manue\Desktop\One-Page Website\Images\Celebration.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="C:\Users\manue\Desktop\One-Page Website\Images\Goal.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="C:\Users\manue\Desktop\One-Page Website\Images\Cristiano_Ronaldo.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="C:\Users\manue\Desktop\One-Page Website\Images\Siii.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="C:\Users\manue\Desktop\One-Page Website\Images\Celebration.jpg" onclick="currentSlide(1)" alt="Celebration">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="C:\Users\manue\Desktop\One-Page Website\Images\Goal.jpg" onclick="currentSlide(2)" alt="Goal">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="C:\Users\manue\Desktop\One-Page Website\Images\Cristiano_Ronaldo.jpg" onclick="currentSlide(3)" alt="Free kick">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="C:\Users\manue\Desktop\One-Page Website\Images\Siii.jpg" onclick="currentSlide(4)" alt="Siii">
+	  </div>
+	</div>
+  </div>
+		<!--End Gallery-->
+		
+		<!--Videos-->
+		<h1 id="Video Section">Videos</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/3hcfvObigQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/AunImole9HI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<!--End Videos-->
+		
+		</body>		
+	<footer>
+		<p>Page made by Manuel L.<p>
+	</footer>
+</html>
